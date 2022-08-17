@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+}
+.Header {
+    min-height: 5vh;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.Main {
+    min-height: 92vh;
+}
+.Footer {
+    min-height: 3vh;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
