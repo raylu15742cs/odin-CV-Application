@@ -41,6 +41,9 @@ button {
     font-weight: bold;
     font-size: 15px;
 }
+img {
+    border-radius: 100%;
+}
 .Submit {
     background-color: rgb(27, 161, 72);
 }
