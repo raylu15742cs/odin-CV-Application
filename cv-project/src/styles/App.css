@@ -3,17 +3,57 @@
 }
 .Header {
     min-height: 5vh;
-    background-color: beige;
+    background-color: rgb(51, 51, 51);
     display: flex;
     justify-content: center;
     align-items:center;
+    color: rgb(238, 238, 238);
 }
 .Main {
-    min-height: 92vh;
+    min-height: 84vh;
+    display: flex;
+    padding: 4vh 6.5vw;
+    background-color: rgb(204, 204, 204);;
+}
+.Formside {
+    width: 50vw;
+    background-color: rgb(238, 238, 238);;
+    margin-right: 3vw;
+}
+/* form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    gap: .9vh;
+}
+input {
+    height: 20px;
+}
+label {
+    font-size: 20px;
+    font-weight: bold;
+}
+button {
+    background-color: rgb(51, 51, 51);
+    color: rgb(238,238,238);
+    height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.Submit {
+    background-color: rgb(27, 161, 72);
+}
+
+
+.Appside {
+    width: 50vw;
+    background-color: rgb(238, 238, 238);
 }
 .Footer {
+    color: rgb(238, 238, 238);
     min-height: 3vh;
-    background-color: beige;
+    background-color: rgb(51, 51, 51);
     display: flex;
     justify-content: center;
     align-items:center;
