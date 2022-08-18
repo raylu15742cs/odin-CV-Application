@@ -10,6 +10,9 @@ class Main extends Component {
       title: ""
     };
   }
+  onSubmitForm = (e) => {
+    e.preventDefault(); 
+  }
   handleChange = (e) => {
     if (e.target.id === 'firstname') {
         this.setState({
@@ -42,7 +45,7 @@ class Main extends Component {
     return (
       <div className="Main">
         <div className="Formside">
-          <form>
+          <form onSubmit={this.onSubmitForm}>
             <label>Personal Information </label>
             <input
               onChange={this.handleChange}
