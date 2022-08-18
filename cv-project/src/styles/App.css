@@ -28,10 +28,10 @@ form {
     gap: .9vh;
 }
 input {
-    height: 20px;
+    height: 2vh;
 }
 label {
-    font-size: 20px;
+    font-size: 2vh;
     font-weight: bold;
 }
 button {
