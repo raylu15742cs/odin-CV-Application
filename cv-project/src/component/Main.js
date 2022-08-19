@@ -5,9 +5,22 @@ class Main extends Component {
     super(props);
 
     this.state = {
-      firstname: "",
-      lastname:"",
-      title: ""
+      firstname: '',
+      lastname: '',
+      title: '',
+      address: '',
+      number: '',
+      email: '',
+      position: '',
+      company: '',
+      expcity: '',
+      expfrom: '',
+      expto: '',
+      university: '',
+      unicity: '',
+      major: '',
+      eduto: '',
+      educfrom: '',
     };
   }
   onSubmitForm = (e) => {
@@ -29,14 +42,70 @@ class Main extends Component {
         title: e.target.value,
       });
     }
-    if (e.target.id === 'lastname') {
+    if (e.target.id === 'address') {
       this.setState({
-        lastname: e.target.value,
+        address: e.target.value,
       });
     }
-    if (e.target.id === 'lastname') {
+    if (e.target.id === 'phonenumber') {
       this.setState({
-        lastname: e.target.value,
+        number: e.target.value,
+      });
+    }
+    if (e.target.id === 'email') {
+      this.setState({
+        email: e.target.value,
+      });
+    }
+    if (e.target.id === 'position') {
+      this.setState({
+        position: e.target.value,
+      });
+    }
+    if (e.target.id === 'company') {
+      this.setState({
+        company: e.target.value,
+      });
+    }
+    if (e.target.id === 'expcity') {
+      this.setState({
+        expcity: e.target.value,
+      });
+    }
+    if (e.target.id === 'expfrom') {
+      this.setState({
+        expfrom: e.target.value,
+      });
+    }
+    if (e.target.id === 'expto') {
+      this.setState({
+        expto: e.target.value,
+      });
+    }
+    if (e.target.id === 'university') {
+      this.setState({
+        university: e.target.value,
+      });
+    }
+    if (e.target.id === 'unicity') {
+      this.setState({
+        unicity: e.target.value,
+      });
+    }
+    if (e.target.id === 'major') {
+      this.setState({
+        major: e.target.value,
+      });
+    }
+    if (e.target.id === 'edufrom') {
+      this.setState({
+        educfrom: e.target.value,
+      });
+      console.log('hi')
+    }
+    if (e.target.id === 'eduto') {
+      this.setState({
+        eduto: e.target.value,
       });
     }
   };
@@ -100,7 +169,7 @@ class Main extends Component {
               type="text"
               placeholder="City"
               onChange={this.handleChange}
-              id="city"
+              id="expcity"
             ></input>
             <div>
               <input
@@ -129,7 +198,7 @@ class Main extends Component {
               type="text"
               placeholder="City"
               onChange={this.handleChange}
-              id="city"
+              id="unicity"
             ></input>
             <input
               type="text"
