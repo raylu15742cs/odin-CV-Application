@@ -1,116 +1,80 @@
-import React , { Component }from 'react';
-import Application from "./Application"
-class Main extends Component {
-  constructor(props) {
-    super(props);
+import React, {useState} from "react";
+import Application from "./Application";
 
-    this.state = {
-      firstname: '',
-      lastname: '',
-      title: '',
-      address: '',
-      number: '',
-      email: '',
-      position: '',
-      company: '',
-      expcity: '',
-      expfrom: '',
-      expto: '',
-      university: '',
-      unicity: '',
-      major: '',
-      eduto: '',
-      educfrom: '',
+
+const Main = () => {
+    const [firstname , setFirstname] = useState("");
+    const [lastname, setLastname] = useState("");
+    const [title, setTitle] = useState('');
+    const [address, setAddress] = useState('');
+    const [number, setNumber] = useState('');
+    const [email, setEmail] = useState('');
+    const [position, setPosition] = useState('');
+    const [company, setCompany] = useState('');
+    const [expcity, setExpcity] = useState('');
+    const [expfrom, setExpfrom] = useState('');
+    const [expto, setExpto] = useState('');
+    const [university, setUniversity] = useState('');
+    const [unicity, setUnicity] = useState('');
+    const [major, setMajor] = useState('');
+    const [eduto, setEduto] = useState('');
+    const [edufrom, setEdufrom] = useState('');
+
+    let onSubmitForm = (e) => {
+      e.preventDefault();
     };
-  }
-  onSubmitForm = (e) => {
-    e.preventDefault(); 
-  }
-  handleChange = (e) => {
-    if (e.target.id === 'firstname') {
-        this.setState({
-           firstname: e.target.value
-        });
-    }
-    if (e.target.id === 'lastname') {
-      this.setState({
-           lastname: e.target.value
-        });
-    }
-    if (e.target.id === 'title') {
-      this.setState({
-        title: e.target.value,
-      });
-    }
-    if (e.target.id === 'address') {
-      this.setState({
-        address: e.target.value,
-      });
-    }
-    if (e.target.id === 'phonenumber') {
-      this.setState({
-        number: e.target.value,
-      });
-    }
-    if (e.target.id === 'email') {
-      this.setState({
-        email: e.target.value,
-      });
-    }
-    if (e.target.id === 'position') {
-      this.setState({
-        position: e.target.value,
-      });
-    }
-    if (e.target.id === 'company') {
-      this.setState({
-        company: e.target.value,
-      });
-    }
-    if (e.target.id === 'expcity') {
-      this.setState({
-        expcity: e.target.value,
-      });
-    }
-    if (e.target.id === 'expfrom') {
-      this.setState({
-        expfrom: e.target.value,
-      });
-    }
-    if (e.target.id === 'expto') {
-      this.setState({
-        expto: e.target.value,
-      });
-    }
-    if (e.target.id === 'university') {
-      this.setState({
-        university: e.target.value,
-      });
-    }
-    if (e.target.id === 'unicity') {
-      this.setState({
-        unicity: e.target.value,
-      });
-    }
-    if (e.target.id === 'major') {
-      this.setState({
-        major: e.target.value,
-      });
-    }
-    if (e.target.id === 'edufrom') {
-      this.setState({
-        educfrom: e.target.value,
-      });
-      console.log('hi')
-    }
-    if (e.target.id === 'eduto') {
-      this.setState({
-        eduto: e.target.value,
-      });
-    }
-  };
 
-  render() {
+    let handleChange = (e) => {
+      if (e.target.id === 'firstname') {
+        setFirstname(e.target.value)
+      }
+      if (e.target.id === 'lastname') {
+        setLastname(e.target.value);
+      }
+      if (e.target.id === 'title') {
+        setTitle(e.target.value);
+      }
+      if (e.target.id === 'address') {
+        setAddress(e.target.value);
+      }
+      if (e.target.id === 'phonenumber') {
+        setNumber(e.target.value);
+      }
+      if (e.target.id === 'email') {
+        setEmail(e.target.value);
+      }
+      if (e.target.id === 'position') {
+        setPosition(e.target.value);
+      }
+      if (e.target.id === 'company') {
+        setCompany(e.target.value);
+      }
+      if (e.target.id === 'expcity') {
+        setExpcity(e.target.value);
+      }
+      if (e.target.id === 'expfrom') {
+        setExpfrom(e.target.value);
+      }
+      if (e.target.id === 'expto') {
+        setExpto(e.target.value);
+      }
+      if (e.target.id === 'university') {
+        setUniversity(e.target.value);
+      }
+      if (e.target.id === 'unicity') {
+        setUnicity(e.target.value);
+      }
+      if (e.target.id === 'major') {
+        setMajor(e.target.value);
+      }
+      if (e.target.id === 'edufrom') {
+        setEdufrom(e.target.value)
+      }
+      if (e.target.id === 'eduto') {
+        setEduto(e.target.value)
+      }
+    };
+
     return (
       <div className="Main">
         <div className="Formside">
@@ -225,10 +189,9 @@ class Main extends Component {
             <button className="Submit">Submit</button>
           </form>
         </div>
-        <Application {...this.state} />
+        <Application  />
       </div>
     );
-  }
-};
+}
 
 export default Main;
